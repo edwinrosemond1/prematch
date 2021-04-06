@@ -1,0 +1,39 @@
+Notes
+
+High level details
+    - last 5 games
+    - goal differential
+    - strength of opponents for last 5 games
+        - get current standings - getStanding -> return rank/points
+        - get currentFormScore - possibilities
+            - Win(points > oppPoints), Unexpected Win (rank < OppRank), 
+            Tie (rank = oppRank), Unexpected Tie(rank <> oppRank), 
+            Loss (rank < OppRank), Unexpected Loss (rank > oppRank) 
+            - Calculate expected points/game and actual points / game - > Form Score 
+
+        - Assign score 
+        - Notable wins or losses
+            - Filter for Unexpected win, unexpected tie, unexpected loss
+        
+    Second method
+        - get match probabilities
+        - get expected points for home, away team (win probablity * 3 + tie probability * 1)
+
+       
+
+
+    - head to head
+    - missing players
+    - team statistics - https://api.sportradar.us/soccer-t3/eu/en/tournaments/sr:tournament:17/teams/sr:competitor:38/statistics.xml?api_key=bq4g8trvq6grz8zevvcnu27f
+
+Win Unexpected - 1
+Win expected - .5
+Tie expected - .25
+Tie unexpected - (-.5, .5)
+Loss Expected (-.5)
+Loss Unexpected (-1)
+
+API Calls
+    - set up getSchedule
+    - set up getResults
+    - set up LiveStandings

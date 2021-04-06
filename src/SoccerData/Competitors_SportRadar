@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tournament_info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated_at="2021-03-03T03:05:04+00:00" xmlns="http://schemas.sportradar.com/sportsapi/v1/soccer" xsi:schemaLocation="http://schemas.sportradar.com/sportsapi/v1/soccer http://schemas.sportradar.com/bsa/soccer/v1/xml/endpoints/soccer/tournament_info.xsd">
+<tournament id="sr:tournament:17" name="Premier League">
+    <sport id="sr:sport:1" name="Soccer"/>
+    <category id="sr:category:1" name="England" country_code="ENG"/>
+    <current_season id="sr:season:77179" name="Premier League 20/21" start_date="2020-09-12" end_date="2021-05-24" year="20/21"/>
+</tournament>
+<season id="sr:season:77179" name="Premier League 20/21" start_date="2020-09-12" end_date="2021-05-24" year="20/21" tournament_id="sr:tournament:17"/>
+<round type="group" number="29"/>
+<season_coverage_info season_id="sr:season:77179" scheduled="393" played="268" max_coverage_level="platinum" max_covered="255" min_coverage_level="bronze"/>
+<coverage_info live_coverage="true"/>
+<groups>
+    <group>
+        <team id="sr:competitor:34" name="Leeds United" country="England" country_code="ENG" abbreviation="LU"/>
+        <team id="sr:competitor:17" name="Manchester City FC" country="England" country_code="ENG" abbreviation="MNC"/>
+        <team id="sr:competitor:35" name="Manchester United FC" country="England" country_code="ENG" abbreviation="MNU"/>
+        <team id="sr:competitor:37" name="West Ham United FC" country="England" country_code="ENG" abbreviation="WHU"/>
+        <team id="sr:competitor:48" name="Everton FC" country="England" country_code="ENG" abbreviation="EVE"/>
+        <team id="sr:competitor:45" name="Southampton FC" country="England" country_code="ENG" abbreviation="SOT"/>
+        <team id="sr:competitor:38" name="Chelsea FC" country="England" country_code="ENG" abbreviation="CFC"/>
+        <team id="sr:competitor:42" name="Arsenal FC" country="England" country_code="ENG" abbreviation="ARS"/>
+        <team id="sr:competitor:39" name="Newcastle United FC" country="England" country_code="ENG" abbreviation="NEW"/>
+        <team id="sr:competitor:31" name="Leicester City FC" country="England" country_code="ENG" abbreviation="LEI"/>
+        <team id="sr:competitor:44" name="Liverpool FC" country="England" country_code="ENG" abbreviation="LFC"/>
+        <team id="sr:competitor:40" name="Aston Villa FC" country="England" country_code="ENG" abbreviation="VIL"/>
+        <team id="sr:competitor:33" name="Tottenham Hotspur FC" country="England" country_code="ENG" abbreviation="TOT"/>
+        <team id="sr:competitor:43" name="Fulham FC" country="England" country_code="ENG" abbreviation="FUL"/>
+        <team id="sr:competitor:8" name="West Bromwich Albion" country="England" country_code="ENG" abbreviation="WBA"/>
+        <team id="sr:competitor:3" name="Wolverhampton Wanderers FC" country="England" country_code="ENG" abbreviation="WOL"/>
+        <team id="sr:competitor:7" name="Crystal Palace FC" country="England" country_code="ENG" abbreviation="PAL"/>
+        <team id="sr:competitor:15" name="Sheffield United FC" country="England" country_code="ENG" abbreviation="SHU"/>
+        <team id="sr:competitor:6" name="Burnley FC" country="England" country_code="ENG" abbreviation="BUR"/>
+        <team id="sr:competitor:30" name="Brighton &amp; Hove Albion FC" country="England" country_code="ENG" abbreviation="BHA"/>
+    </group>
+</groups>
+</tournament_info>
