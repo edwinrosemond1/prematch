@@ -1,6 +1,7 @@
 const express = require("express");
 
 const schedule = require("./services/soccerScheduleDataService.js");
+const standings = require("./services/soccerStandings.js");
 
 const app = express();
 
@@ -18,6 +19,11 @@ app.get("/api/preMatch", (req, res) => {
 
 app.get("/api/schedule", (req, res) => {
   const response = schedule.getSoccerSchedule();
+  res.json(response);
+});
+
+app.get("/api/standings", (req, res) => {
+  const response = standings.getStandingsService();
   res.json(response);
 });
 
