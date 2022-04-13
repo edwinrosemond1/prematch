@@ -1,0 +1,26 @@
+.sidebar {
+  width: 250px;
+  min-width: 300px;
+  padding: 20px 20px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 0 6px hsl(210 14% 90%);
+}
+.sideBarList {
+  display: flex;
+  align-items: cover;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.sideBarList:hover {
+  background-color: #e8f5fe;
+  color: #50b7f5;
+  transition: color 100ms ease-out;
+}
+.right-fixed {
+  float: right;
+}
+.rightCol {
+  padding: 0 0 0 1rem;
+  position: fixed;
+  right: 0;
+}

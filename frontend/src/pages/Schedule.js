@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 //import { schedule, noGames } from "../SoccerData/ScheduleData.js";
 import Game from "./Game.js";
-import { getSoccerSchedule } from "../services/soccerScheduleDataService.js";
+// import { getSoccerSchedule } from "../services/soccerScheduleDataService.js";
 import ReactLoading from "react-loading";
 
 const key = process.env.REACT_APP_API_KEY;
