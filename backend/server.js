@@ -22,8 +22,9 @@ app.get("/api/schedule", (req, res) => {
   res.json(response);
 });
 
-app.get("/api/standings", (req, res) => {
-  const response = standings.getStandingsService();
+app.get("/api/standings", async (req, res) => {
+  const response = await standings.getStandingsService();
+  console.log(response);
   res.json(response);
 });
 
