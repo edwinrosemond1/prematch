@@ -24,7 +24,9 @@ app.get("/api/schedule", (req, res) => {
 
 app.get("/api/standings", async (req, res) => {
   const response = await standings.getStandingsService();
-  console.log(response);
+  console.log("environment var");
+  // console.log(process.env);
+  // console.log(response);
   res.json(response);
 });
 

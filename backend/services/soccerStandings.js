@@ -1,6 +1,11 @@
 const fetch = require("cross-fetch");
 const currentDate = require("./getCurrentDate.js");
-const cache = {};
+const testStandings = require("./testData/testStandings");
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
+const cache = testStandings.testStandings;
 
 async function getStandingsService() {
   let storedData = currentDate.getCurrentDate() + "Standings";
@@ -11,9 +16,9 @@ async function getStandingsService() {
   let api_key = "stu58fakwy2gazv4vr3vggqh";
   let url = base + seasonID + "/standings.json";
   url += "?api_key=" + api_key;
-  console.log("cache");
-  console.log(cache);
-  console.log(url);
+  // console.log("cache");
+  console.log(process.env.SR_URL);
+  // console.log(url);
   const store = url + currentDate.getCurrentDate();
   if (!(store in cache)) {
     try {
@@ -27,8 +32,8 @@ async function getStandingsService() {
       // console.log("standings response pre json");
       if (response.ok) {
         let data = await response.json();
-        console.log("logging our standings data to json");
-        console.log(data);
+        // console.log("logging our standings data to json");
+        // console.log(data);
         cache[store] = JSON.stringify(data);
 
         return data;
