@@ -19,8 +19,10 @@
 .right-fixed {
   float: right;
 }
-.rightCol {
+.table-row {
+  box-shadow: 0 0 6px hsl(210 14% 90%);
+}
+/* .rightCol {
   padding: 0 0 0 1rem;
   position: fixed;
-  right: 0;
-}
+} */

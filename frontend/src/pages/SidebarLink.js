@@ -1,13 +1,14 @@
 import "./styles/sidebar.css";
 
-function SidebarLink({ rank, name, points, key }) {
+function SidebarLink({ rank, name, points, teamID }) {
   return (
-    <span className="sideBarList" key={key}>
-      {rank} {name}
-      <div className="right-fixed">
-        <div className="rightCol">{points}</div>
-      </div>
-    </span>
+    // <span className="sideBarList" key={teamID}>
+    <p>
+      <td>{rank} </td>
+      <td>{name}</td>
+      <td>{points}</td>
+    </p>
+    // </span>
   );
 }
 export default SidebarLink;
