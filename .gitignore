@@ -10,6 +10,7 @@
 .pnp.js
 
 .env
+toDo.txt
 
 # testing
 /coverage
